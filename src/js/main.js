@@ -223,6 +223,34 @@ $.get("https://v1.hitokoto.cn", {}, function (data, status, jqxhr) {
 	loadMain();
 });
 
+function bgSet() {
+	try {
+		var img = new Image();
+		var imgUrl = 'https://cdn.jsdelivr.net/gh/wliduo/CDN@master/wallpaper/201911/20191107005.jpg';
+		if (seconds % 2 == 0) {
+			imgUrl = 'https://cdn.jsdelivr.net/gh/wliduo/CDN@master/wallpaper/201911/20191107010.jpg';
+		}
+		if (seconds % 5 == 0) {
+			imgUrl = 'https://cdn.jsdelivr.net/gh/wliduo/CDN@master/wallpaper/201911/20191101005.jpg';
+		}
+		img.src = imgUrl;
+		img.onload = function () {
+			// $("#bg").hide()
+			document.getElementById('bg').style.backgroundImage = "url(" + imgUrl + ")";
+			$("#bg").fadeIn(1000);
+		}
+	} catch(err) {
+		bgSet();
+	} finally {
+		
+	}
+}
+
+// 获取当前时间
+var date = new Date();
+var seconds = date.getSeconds();
+bgSet();
+
 // $$('#qq').setAttribute('href', window.isPhone ? 'mqqwpa://im/chat?chat_type=wpa&uin=123456789&version=1&src_type=web&web_src=oicqzone.com' : 'tencent://message/?uin=123456789')
 if (isPC) {
     // 加载雪花
