@@ -1,0 +1,46 @@
+.content.content-main
+	#page
+		#card
+			.card-inner
+				header
+					//- img(src=`${main.avatar.link}` width=`${main.avatar.width}` height=`${main.avatar.height}` alt="avatar")
+					h1(data-translate="name") #{main.name}
+					h2#signature(data-translate="signature" original-content=`${main.signature}`)
+
+				- const { whole_first , whole_second , whole_third, half_first , quarter_first , quarter_second , quarter_third , quarter_fourth } = main.ul
+ 
+				ul
+					li#whole-first
+						a(href=`${whole_first.href}` aria-label=`${whole_first.text}` target="_blank") #{whole_first.text}
+							//- i(class=`iconfont icon-${whole_first.icon}`)
+							span(data-translate=`${whole_first.text}`) #{whole_first.text}
+
+					li#whole-second
+						a(href=`${whole_second.href}` aria-label=`${whole_second.text}` target="_blank") #{whole_second.text}
+							//- i(class=`iconfont icon-${whole_second.icon}`)
+							span(data-translate=`${whole_second.text}`) #{whole_second.text}
+
+					li#whole-third
+						a(href=`${whole_third.href}` aria-label=`${whole_third.text}` target="_blank") #{whole_third.text}
+							//- i(class=`iconfont icon-${whole_third.icon}`)
+							span(data-translate=`${whole_third.text}`) #{whole_third.text}
+
+					li#half-first
+						a(href=`${half_first.href}` aria-label=`${half_first.text}` target="_blank") #{half_first.text}
+							//- i(class=`iconfont icon-${half_first.icon}`)
+							span(data-translate=`${half_first.text}`) #{half_first.text}
+
+					li#quarter-first.quarter
+						a(href=`${quarter_first.href}` rel="noopener" aria-label=`${quarter_first.text}` target="_blank") #{quarter_first.text}
+							//- i(class=`iconfont icon-${quarter_first.icon}`)
+							span(data-translate=`${quarter_first.text}`) #{quarter_first.text}
+
+					li#quarter-second.quarter
+						a(href=`${quarter_first.href}` rel="noopener" aria-label=`${quarter_second.text}` target="_blank") #{quarter_second.text}
+							//- i(class=`iconfont icon-${quarter_second.icon}`)
+							span(data-translate=`${quarter_second.text}`) #{quarter_second.text}
+				
+				//- 页面鼠标跟随花瓣
+				span(class="js-cursor-container")
+				//- 页面雪花效果
+				dev(id="hovertreesnow")

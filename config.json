@@ -1,0 +1,48 @@
+{
+	"head": {
+		"title": "主页",
+		"description": "dolyw的主页",
+		"favicon": "https://cdn.jsdelivr.net/gh/wliduo/Index@master/static/favicon.ico"
+	},
+	"main": {
+		"name": "青空(dolyw)",
+		"signature": "这个世界上没有天才，只有不努力的笨蛋",
+		"avatar": {
+			"link": "https://cdn.jsdelivr.net/gh/wliduo/CDN@master/avatar/01_thn.png",
+			"height": "80",
+			"width": "80"
+		},
+		"ul": {
+			"whole_first": {
+				"href": "https://dolyw.com/go.html?url=https://blog.dolyw.com",
+				"icon": "chat",
+				"text": "Blog博客"
+			},
+			"whole_second": {
+				"href": "https://dolyw.com/go.html?url=https://note.dolyw.com",
+				"icon": "github",
+				"text": "Note笔记"
+			},
+			"whole_third": {
+				"href": "https://dolyw.com/go.html?url=https://map.dolyw.com",
+				"icon": "blog",
+				"text": "Map导航"
+			},
+			"half_first": {
+				"href": "https://dolyw.com/go.html?url=https://res.dolyw.com",
+				"icon": "resume",
+				"text": "Music音乐台"
+			},
+			"quarter_first": {
+				"href": "https://dolyw.com/go.html?url=https://msg.dolyw.com",
+				"icon": "email",
+				"text": "Msg留言板"
+			},
+			"quarter_second": {
+				"href": "https://dolyw.com/go.html?url=https://friend.dolyw.com",
+				"icon": "qq",
+				"text": "Friend友链"
+			}
+		}
+	}
+}
