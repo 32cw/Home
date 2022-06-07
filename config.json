@@ -2,13 +2,13 @@
 	"head": {
 		"title": "主页",
 		"description": "dolyw的主页",
-		"favicon": "https://cdn.jsdelivr.net/gh/wliduo/Index@master/static/favicon.ico"
+		"favicon": "https://dolyw.com/static/favicon.ico"
 	},
 	"main": {
 		"name": "青空(dolyw)",
 		"signature": "这个世界上没有天才，只有不努力的笨蛋",
 		"avatar": {
-			"link": "https://cdn.jsdelivr.net/gh/wliduo/CDN@master/avatar/01_thn.png",
+			"link": "https://cdn.dolyw.com/avatar/01_thn.png",
 			"height": "80",
 			"width": "80"
 		},

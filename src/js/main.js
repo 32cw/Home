@@ -226,12 +226,12 @@ $.get("https://v1.hitokoto.cn", {}, function (data, status, jqxhr) {
 function bgSet() {
 	try {
 		var img = new Image();
-		var imgUrl = 'https://cdn.jsdelivr.net/gh/wliduo/CDN@master/wallpaper/201911/20191107005.jpg';
+		var imgUrl = 'https://cdn.dolyw.com/wallpaper/201911/20191107005.jpg';
 		if (seconds % 2 == 0) {
-			imgUrl = 'https://cdn.jsdelivr.net/gh/wliduo/CDN@master/wallpaper/201911/20191107010.jpg';
+			imgUrl = 'https://cdn.dolyw.com/wallpaper/201911/20191107010.jpg';
 		}
 		if (seconds % 5 == 0) {
-			imgUrl = 'https://cdn.jsdelivr.net/gh/wliduo/CDN@master/wallpaper/201911/20191101005.jpg';
+			imgUrl = 'https://cdn.dolyw.com/wallpaper/201911/20191101005.jpg';
 		}
 		img.src = imgUrl;
 		img.onload = function () {
@@ -276,7 +276,7 @@ if (isPC) {
         live2d_settings['aboutPageUrl'] = 'https://github.com/fghrsh/live2d_demo';   // 关于页地址
         live2d_settings['hitokotoAPI'] = 'hitokoto.cn';
         /* 在 initModel 前添加 */
-        initModel("https://cdn.jsdelivr.net/gh/wliduo/Mark@master/assets/live2d/waifu-tips.json?v=1.4.2");
+        initModel("https://mark.dolyw.com/assets/live2d/waifu-tips.json?v=1.4.2");
     } catch(err) {
         console.log('[Error] JQuery is not defined.')
     } finally {
